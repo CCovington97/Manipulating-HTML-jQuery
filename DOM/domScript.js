@@ -61,8 +61,10 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     function giveName() {
+        let span = document.createElement('span')
         let name = document.createTextNode('Connor')
-        div4.appendChild(name)
+        span.appendChild(name)
+        div4.appendChild(span)
     }
 
     let friending = ['Calvin', 'Cecil', 'Darion', 'James', 'Joshua', 'Mariah', 'Mark', 'Michael', 'Ryan', 'Will']
