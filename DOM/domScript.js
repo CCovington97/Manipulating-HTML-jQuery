@@ -64,4 +64,22 @@ document.addEventListener('DOMContentLoaded', function () {
         let name = document.createTextNode('Connor')
         div4.appendChild(name)
     }
+
+    let friending = ['Calvin', 'Cecil', 'Darion', 'James', 'Joshua', 'Mariah', 'Mark', 'Michael', 'Ryan', 'Will']
+    let friendingBtn = document.getElementById('friendingBtn')
+    let friendingList = document.getElementById('friendingList')
+    let div6 = document.getElementById('div6')
+    let f = 0
+
+    friendingBtn.addEventListener('click', function () {
+        addFriending()
+    })
+
+    function addFriending() {
+        console.log('angery')
+        let liFriending= document.createElement('li')
+        liFriending.innerText = friending[f]
+        friendingList.appendChild(liFriending)
+        f++
+    }
 })
