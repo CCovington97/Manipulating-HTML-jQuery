@@ -31,5 +31,15 @@ $(document).ready(function () {
         $(p).css('color', colors[Math.floor(Math.random() * colors.length)])
     })
 
+    let div5 = $('<div></div>')
+    let nameBtn = $('<button>This is my name</button>')
+    $(div5).append(nameBtn)
+    $('body').append(div5)
+
+    nameBtn.click(function() {
+        let span = $('<span>Connor</span>')
+        $(div5).append(span)
+    })
+
     
 })

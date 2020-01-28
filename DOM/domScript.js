@@ -51,10 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let nameBtn = document.createElement('button')
     let nameBtnText = document.createTextNode('This is my name')
-    let div4 = document.createElement('div')
+    let div5 = document.createElement('div')
     nameBtn.appendChild(nameBtnText)
-    div4.appendChild(nameBtn)
-    document.body.appendChild(div4)
+    div5.appendChild(nameBtn)
+    document.body.appendChild(div5)
 
     nameBtn.addEventListener('click', function () {
         giveName()
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let span = document.createElement('span')
         let name = document.createTextNode('Connor')
         span.appendChild(name)
-        div4.appendChild(span)
+        div5.appendChild(span)
     }
 
     let friending = ['Calvin', 'Cecil', 'Darion', 'James', 'Joshua', 'Mariah', 'Mark', 'Michael', 'Ryan', 'Will']
