@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log('Hello')
     let div = $('<div></div>');
     let button = $('<button>Nice.</button>');
     $(div).append(button);
@@ -9,6 +8,11 @@ $(document).ready(function () {
         alert('69')
     })
 
+    let txtButton = $('#txtButton')
+    let txtBox = $('#txtBox')
 
+    txtButton.click(function () {
+        alert(txtBox.val())
+    })
 
 })
