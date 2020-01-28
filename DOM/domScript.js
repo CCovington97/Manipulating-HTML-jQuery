@@ -15,4 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
     function niceBtn() {
         alert('69')
     }
+
+    let txtButton = document.getElementById('txtButton')
+    let txtBox = document.getElementById('txtBox')
+
+    txtButton.addEventListener('click', function () {
+        txtBoxAlert()
+    })
+
+    function txtBoxAlert() {
+        alert(txtBox.value)
+    }
 })
