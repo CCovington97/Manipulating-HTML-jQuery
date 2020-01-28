@@ -41,5 +41,16 @@ $(document).ready(function () {
         $(div5).append(span)
     })
 
-    
+    let friending = ['Calvin', 'Cecil', 'Darion', 'James', 'Joshua', 'Mariah', 'Mark', 'Michael', 'Ryan', 'Will']
+    let friendingBtn = $('#friendingBtn') // button
+    let friendingList = $('#friendingList')  // ul
+    let f = 0
+
+    friendingBtn.click(function() {
+        let liFriending = $('<li>')
+        $(liFriending).text(friending[f])
+        $(friendingList).append(liFriending)
+        f++
+    })
+
 })
