@@ -15,4 +15,11 @@ $(document).ready(function () {
         alert(txtBox.val())
     })
 
+    let div3 = $('#black')
+    $(div3).mouseover(function() {
+        $(div3).css('background-color', 'blue')
+    })
+    $(div3).mouseleave(function() {
+        $(div3).css('background-color', 'black')
+    })
 })
