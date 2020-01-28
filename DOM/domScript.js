@@ -38,4 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
     function mouseOut() {
         div3.style.backgroundColor = "black";
     }
+
+    let p = document.createElement('p')
+    let pText = document.createTextNode('Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate vero repudiandae reprehenderit iusto id tenetur iure eligendi. Libero, quos! Odit dolore iste repellat minus distinctio, accusantium nesciunt dicta similique.')
+    p.appendChild(pText)
+    div.appendChild(p)
+    let colors = ["blue", "red", "yellow", "green", "purple", "orange", "turquoise", "chartreuse"]
+
+    p.addEventListener('click', function () {
+        p.style.color = colors[Math.floor(Math.random() * colors.length)];
+    })
 })
