@@ -48,4 +48,20 @@ document.addEventListener('DOMContentLoaded', function () {
     p.addEventListener('click', function () {
         p.style.color = colors[Math.floor(Math.random() * colors.length)];
     })
+
+    let nameBtn = document.createElement('button')
+    let nameBtnText = document.createTextNode('This is my name')
+    let div4 = document.createElement('div')
+    nameBtn.appendChild(nameBtnText)
+    div4.appendChild(nameBtn)
+    document.body.appendChild(div4)
+
+    nameBtn.addEventListener('click', function () {
+        giveName()
+    })
+
+    function giveName() {
+        let name = document.createTextNode('Connor')
+        div4.appendChild(name)
+    }
 })
