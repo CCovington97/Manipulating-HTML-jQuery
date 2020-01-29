@@ -2,7 +2,7 @@ $(document).ready(function () {
     let div = $('<div></div>');
     let button = $('<button>Nice.</button>');
     $(div).append(button);
-    $('body').append(div)
+    $('body').prepend(div)
 
     button.click(function() {
         alert('69')
@@ -24,7 +24,9 @@ $(document).ready(function () {
     })
 
     let p = $('<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum amet, eveniet repellat ea id enim quae. Perferendis a necessitatibus quas omnis! Eius eveniet, nobis itaque repudiandae provident minima totam!</p>');
-    $(div).append(p)
+    let div4 = $('<div></div>')
+    $(div4).append(p)
+    $('body').append(div4)
     let colors = ['blue', 'red', 'green', 'purple', 'yellow', 'orange', 'cyan', 'pink', 'chartreuse', 'violet', 'gold', 'coral' ]
 
     p.click(function () {
@@ -51,6 +53,10 @@ $(document).ready(function () {
         $(liFriending).text(friending[f])
         $(friendingList).append(liFriending)
         f++
+        if (f > 10) {
+            console.log(';~;')
+            $(liFriending).text('You are out of friends')
+        }
     })
 
 })

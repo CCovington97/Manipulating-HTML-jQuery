@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     button.classList.add('nice')
     button.appendChild(btnText)
     div.appendChild(button)
-    document.body.appendChild(div)
+    document.body.prepend(div)
 
     button.addEventListener('click', function () {
         niceBtn();
@@ -41,8 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let p = document.createElement('p')
     let pText = document.createTextNode('Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate vero repudiandae reprehenderit iusto id tenetur iure eligendi. Libero, quos! Odit dolore iste repellat minus distinctio, accusantium nesciunt dicta similique.')
+    let div4 = document.createElement('div')
     p.appendChild(pText)
-    div.appendChild(p)
+    div4.appendChild(p)
+    document.body.appendChild(div4)
     let colors = ["blue", "red", "yellow", "green", "purple", "orange", "turquoise", "chartreuse"]
 
     p.addEventListener('click', function () {
@@ -78,10 +80,13 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     function addFriending() {
-        console.log('angery')
         let liFriending= document.createElement('li')
         liFriending.innerText = friending[f]
         friendingList.appendChild(liFriending)
         f++
+        if (f > 10) {
+            console.log(';~;')
+            liFriending.innerText = "You are out of friends"
+        }
     }
 })
